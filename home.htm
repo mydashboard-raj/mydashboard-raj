@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neelkanth Balmandir Secondary School - Quality education in Dhading, Nepal">
+    <title>Neelkanth Balmandir Secondary School - Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="image.png" alt="Neelkanth Balmandir School Logo" class="school-logo">
+            </div>
+            <div class="header-text">
+                <h1>Neelkanth Balmandir Secondary School</h1>
+                <p class="tagline">Empowering minds, Building futures</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="admission.htm" class="nav-link">Admissions</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Announcement Banner -->
+    <div class="announcement" role="status" aria-live="polite">
+        <p>📢 First Terminal examination will be held soon. Check the notice board for details.</p>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="site-main">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2>Welcome to Neelkanth Balmandir Secondary School</h2>
+                <p>Located in Nilkantha-3, Dhading, Bagmati Province, Nepal</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2>About Our School</h2>
+            <div class="section-content">
+                <p>
+                    Neelkanth Balmandir Secondary School is a premier educational institution dedicated to providing quality education 
+                    and fostering the intellectual, social, and moral development of our students. With a commitment to excellence, 
+                    we prepare our learners to become responsible citizens and leaders of tomorrow.
+                </p>
+                <h3>Our Mission</h3>
+                <p>
+                    To provide a nurturing learning environment that encourages critical thinking, creativity, and excellence 
+                    while respecting cultural values and promoting social responsibility.
+                </p>
+                <h3>Our Values</h3>
+                <ul class="values-list">
+                    <li><strong>Excellence:</strong> Striving for the highest standards in education</li>
+                    <li><strong>Integrity:</strong> Building character and moral values</li>
+                    <li><strong>Inclusivity:</strong> Creating an inclusive community for all</li>
+                    <li><strong>Innovation:</strong> Embracing modern teaching methods and technology</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Admissions Section -->
+        <section id="admissions" class="content-section">
+            <h2>Admissions</h2>
+            <div class="section-content">
+                <p>
+                    We welcome applications from students across all grades. Our admission process is transparent and merit-based, 
+                    ensuring equal opportunities for all deserving students.
+                </p>
+                <h3>Admission Requirements</h3>
+                <ul class="requirements-list">
+                    <li>Completed application form</li>
+                    <li>Academic transcripts from previous school</li>
+                    <li>Birth certificate or citizenship document</li>
+                    <li>Medical clearance certificate</li>
+                    <li>Two passport-size photographs</li>
+                </ul>
+                <p class="cta-text">
+                    For more information about admissions, please <a href="#contact" class="link">contact us</a> or visit our office during office hours.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2>Contact Us</h2>
+            <div class="section-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Address</h3>
+                        <p>Nilkantha-3, Dhading, Bagmati Province, Nepal</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@neelkanthbalmandir.edu.np">info@neelkanthbalmandir.edu.np</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+977-10-xxxxxxx">+977-10-xxxxxxx</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Office Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 4:00 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Neelkanth Balmandir Secondary School. All rights reserved.</p>
+            <p class="footer-note">Located in Nilkantha-3, Dhading, Bagmati Province, Nepal</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Add active class to nav links on click
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
